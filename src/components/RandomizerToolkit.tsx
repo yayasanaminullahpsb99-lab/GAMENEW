@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Shuffle, Users, Sparkles, Copy, Check, LayoutGrid, Award, BookOpen } from 'lucide-react';
+import { Shuffle, Users, Sparkles, Copy, Check } from 'lucide-react';
 import { MOTION_PROMPTS, MotionPrompt } from '../data/motionPrompts';
 import { audioSynthesizer } from '../utils/audio';
 

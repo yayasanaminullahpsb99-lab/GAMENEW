@@ -8,7 +8,7 @@ import { RandomizerToolkit } from './components/RandomizerToolkit';
 import { Soundboard } from './components/Soundboard';
 import { ICE_BREAKER_GAMES } from './data/iceBreakerGames';
 import { IceBreakerGame } from './types/game';
-import { Sparkles, Monitor, Users, Clock, Coffee, ShieldAlert, CheckCircle2 } from 'lucide-react';
+import { Monitor, Users, Clock, Coffee, Sparkles } from 'lucide-react';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<'games' | 'prompts' | 'timer'>('games');

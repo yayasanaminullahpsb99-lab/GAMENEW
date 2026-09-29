@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Play, Pause, RotateCcw, Plus, Clock, Volume2, VolumeX } from 'lucide-react';
 import { audioSynthesizer } from '../utils/audio';
 
@@ -16,7 +16,6 @@ export const ClassTimer: React.FC<ClassTimerProps> = ({
   const [timeLeft, setTimeLeft] = useState(initialMinutes * 60);
   const [isRunning, setIsRunning] = useState(false);
   const [soundEnabled, setSoundEnabled] = useState(true);
-  const prevTimeLeftRef = useRef(timeLeft);
 
   useEffect(() => {
     setTimeLeft(initialMinutes * 60);
@@ -25,7 +24,7 @@ export const ClassTimer: React.FC<ClassTimerProps> = ({
   }, [initialMinutes]);
 
   useEffect(() => {
-    let timer: NodeJS.Timeout | null = null;
+    let timer: ReturnType<typeof setInterval> | null = null;
     if (isRunning && timeLeft > 0) {
       timer = setInterval(() => {
         setTimeLeft((prev) => {

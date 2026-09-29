@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Play, Pause, RotateCcw, Volume2, Sparkles, ChevronRight, Eye, EyeOff, Shuffle } from 'lucide-react';
+import { X, Play, Pause, RotateCcw, Sparkles, Eye, EyeOff, Shuffle } from 'lucide-react';
 import { IceBreakerGame } from '../types/game';
 import { MOTION_PROMPTS, MotionPrompt } from '../data/motionPrompts';
 import { audioSynthesizer } from '../utils/audio';
@@ -39,7 +39,7 @@ export const ProjectorMode: React.FC<ProjectorModeProps> = ({
 
   // Tick interval
   React.useEffect(() => {
-    let interval: NodeJS.Timeout | null = null;
+    let interval: ReturnType<typeof setInterval> | null = null;
     if (isRunning && timeLeft > 0) {
       interval = setInterval(() => {
         setTimeLeft((prev) => {

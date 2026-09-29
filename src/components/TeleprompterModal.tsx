@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Copy, Check, MessageSquare, Volume2, Sparkles, Clock, Users } from 'lucide-react';
+import { X, Copy, Check, MessageSquare, Clock, Users } from 'lucide-react';
 import { IceBreakerGame } from '../types/game';
 import { audioSynthesizer } from '../utils/audio';
 

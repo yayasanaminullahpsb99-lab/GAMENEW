@@ -2,12 +2,10 @@ import React, { useState } from 'react';
 import {
   Clock,
   Users,
-  Zap,
   CheckCircle2,
   Copy,
   Check,
   MessageSquare,
-  Sparkles,
   ChevronDown,
   ChevronUp,
   Monitor,
