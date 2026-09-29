@@ -1,0 +1,6 @@
+{
+  "name": "IceBreaker Dosen Pro - Energizer Kelas Kuliah",
+  "description": "Panduan dan toolkit interaktif ice breaking 5-10 menit tanpa alat untuk mencairkan suasana dan mengusir rasa kantuk mahasiswa di kelas tatap muka.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
